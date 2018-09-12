@@ -1,0 +1,29 @@
+$color: #green;
+$font12:12px;
+$font20:20px;
+$borderradius8:8px;
+.wrapper-head {
+  width:100%;
+  height:269px;
+  background:url(./images/bg.png);
+  background-size:cover;
+  overflow:hidden;
+  .head-title {
+    height:16px;
+    width:179px;
+    background:url(./images/hd-title.png);
+    background-size:179px 16px;
+    background-repeat:no-repeat;
+    margin:40px auto 20px;
+  }
+  .greeting {
+    font-size: 20px;
+  }
+  button {
+    color:$color;
+    font-size:$font20;
+    width:120px;
+    border:1px solid blue;
+    border-radius:$borderradius8;
+  }
+}
