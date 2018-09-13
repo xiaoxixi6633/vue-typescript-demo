@@ -1,0 +1,16 @@
+$color: #green;
+$font12:12px;
+$font20:20px;
+$borderradius8:8px;
+.wrapper-content {
+  padding:0 13px;
+  .content {
+    width:100%;
+    .content-heade {
+      background:url(./images/disecopy.png);
+      background-repeat:no-repeat;
+      background-size:cover;
+      bckground-position:top left;
+    }
+  }
+}
