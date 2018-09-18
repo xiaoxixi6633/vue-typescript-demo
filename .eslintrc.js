@@ -28,5 +28,7 @@ module.exports = {
     'semi': ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "comma-dangle": ["error", "never"],
+    "no-mixed-spaces-and-tabs":0,
+    "no-tabs":0,
   }
 }
