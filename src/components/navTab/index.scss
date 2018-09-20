@@ -7,15 +7,14 @@ $font16:16px;
   margin:0 auto;
   display:flex;
   justify-content:space-between;
+  li.active{
+    border-bottom:2px solid #fff
+  }
   .nav-a {
     color:$color;
     font-size:$font16;
     padding-bottom:5px;
     
   }
-  .nav-a
-    &.active{
-      border-bottom:1px solid #fff
-    }
 
 }
