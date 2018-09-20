@@ -1,24 +1,34 @@
-import Vue from "vue";
+import Vue from 'vue'
 import Vuex, { ActionTree, MutationTree } from 'vuex'
 import actions from './actions'
 import mutations from './mutations'
 import getters from './getters'
+// import 'babel-polyfill'
 Vue.use(Vuex)
 
 interface State {
-  login: Boolean;
-   searchVal: string;
+  login: Boolean,
+  modules: StoreState.module[],
+  headline: StoreState.headline[],
+  activities: StoreState.activity[],
+  superSales: StoreState.superSale[],
+  shops: StoreState.shop[],
+  searchVal: string
 }
 
-let state:State = {
+let state: State = {
   login: false,
-  searchVal:''
+  modules: [],
+  headline: [],
+  activities: [],
+  superSales: [],
+  shops: [],
+  searchVal: ''
 }
-
 
 export default new Vuex.Store({
-	actions,
-	mutations,
-	getters,
-	state,
-});
+  state,
+  actions,
+  getters,
+  mutations
+})
