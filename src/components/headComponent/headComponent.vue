@@ -24,5 +24,4 @@ export default class headComponent extends Vue {
 
 <style scoped lang="scss">
 @import './index.scss';
-
 </style>
