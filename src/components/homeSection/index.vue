@@ -1,10 +1,15 @@
 <template>
     <div class="home-section-wrapper">
       <div class="home-section">
-        <div class="home-section-hd">实际赎回金额 (元)</div>
+        <div class="line"></div>
         <div class="home-section-content">
-          <div>565,566</div>
-          <div>233,355</div>
+          <div class="home-section-hd">实际赎回金额 (元)
+            <div class="expansion-btn"></div>
+          </div>
+          <div class="home-section-article">
+            <div class="font-left">565,566</div>
+            <div class="font-right">233,355</div>
+          </div>
         </div>
       </div>
     </div>
@@ -20,7 +25,6 @@ export default class homeSection extends Vue {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import './index.scss';
-
 </style>

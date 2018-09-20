@@ -8,6 +8,50 @@ $borderradius8:8px;
   box-shadow: 0 4px 8px 2px rgba(137,174,240,0.15);
   border-radius: 4px;
   .home-section {
-
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 2px rgba(137,174,240,0.15);
+    border-radius: 4px;  	
+    position:relative;
+  	.line{
+      width:4px;
+      height:40px;
+      background: #E77296;
+      border-radius: 4px 0 0 0;
+      position:absolute;
+      top:0;
+      left:0;
+  	}
+    .home-section-content {
+      margin:15px;
+	  .home-section-hd {
+	    font-size: 16px;
+	    text-align:left;
+	    color: #A6A6A6;
+	    padding:10px 0;
+	    position:relative;
+	    .expansion-btn {
+	      position:absolute;
+	      right:0;
+	      top:8px;
+	      width:10px;
+	      height:10px;
+	      background:url(./images/expansion.png); 
+	      background-size:10px 10px;
+	    }
+	  }
+	  .home-section-article {
+	    display:flex;
+	    justify-content:space-between;
+	    padding:18px 0;
+	    .font-left {
+          font-size: 24px;
+          color: #010E4F;
+	    }
+	    .font-right {
+	      font-size: 16px;
+          color: #FF6666;
+	    }
+	  }
+    }
   }
 }
