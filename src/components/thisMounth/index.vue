@@ -1,12 +1,7 @@
 <template>
-    <div class="home-section-wrapper">
-      <div class="home-section">
-        <div class="home-section-hd">实际赎回金额 (元)</div>
-        <div class="home-section-content">
-          <div>565,566</div>
-          <div>233,355</div>
-        </div>
-      </div>
+    <div class="today-wrapper">
+      <section-hd></section-hd>
+      <home-section></home-section>
     </div>
 </template>
 
@@ -14,8 +9,15 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import {State} from 'vuex-class';
-@Component
-export default class homeSection extends Vue {
+import sectionHd from '@/components/sectionHd/index.vue';
+import homeSection from '@/components/homeSection/index.vue';
+@Component({
+  components: {
+    sectionHd,
+    homeSection
+  }
+})
+export default class today extends Vue {
   @State login: boolean;
 };
 </script>

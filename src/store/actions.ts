@@ -1,6 +1,7 @@
 import {ActionTree} from 'vuex';
 import axios from 'axios';
-import TYPES from './types'
+import TYPES from './types';
+import modules from '../mock/slides';
 const actions: ActionTree<any, any> = {
   // ajax 初始化
   async initAjax({ dispatch }) {
@@ -12,6 +13,8 @@ const actions: ActionTree<any, any> = {
   },
   // 获取modules
   async getModules({ state, commit }) {
+    let _res = modules;
+    console.log(_res);
     const res: Ajax.AjaxResponse = await axios.get('/modules').then((res) => res.data).catch((e: string) => console.error(e))
     if (res && res.code == 200) commit(TYPES.SET_MODULES, res.result.list)
   },

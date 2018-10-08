@@ -1,0 +1,61 @@
+.fixed-top {
+  position:fixed;
+  width:100%;
+  left:0;
+  top:0;
+  z-index:9999;
+  background: #5b96ff;
+.nav{
+  width:100%;
+  background:#5B96FF;
+  position:fixed;
+  width:100%;
+  left:0;
+  top:59px;
+  z-index:9999;
+  height:40px;
+  .nav-conent {
+    width:28%;
+    margin:0 auto;
+    height:38px;
+    line-height:35px;
+    display:flex;
+    box-sizing:border-box;
+    .nav-a {
+      display:block;
+      flex:1;
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      color: #D0ECFF;
+      letter-spacing: 0;
+      text-align: center;
+      span{
+        padding:5px 0 3px 0;
+      }
+      &.active {
+        display:block;
+        span{
+          color: #fff;
+          border-bottom:2px solid #fff;
+        }
+      }
+    }
+  }
+  
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

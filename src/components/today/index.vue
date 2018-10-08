@@ -10,7 +10,7 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 import {State} from 'vuex-class';
 import sectionHd from '@/components/sectionHd/index.vue';
-import homeSection from '@/components/homeSection/index.vue'
+import homeSection from '@/components/homeSection/index.vue';
 @Component({
   components: {
     sectionHd,
