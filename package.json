@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@types/webpack-env": "^1.13.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

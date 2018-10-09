@@ -46,6 +46,10 @@ module.exports = {
   module: {
     rules: [
       ...(config.dev.useEslint ? [createLintingRule()] : []),
+      // {
+      //   test: /\.tsx?$/,
+      //   loader: "awesome-typescript-loader"
+      // },
       {
         test: /\.sass$/,
         loaders: ['style', 'css', 'sass']
