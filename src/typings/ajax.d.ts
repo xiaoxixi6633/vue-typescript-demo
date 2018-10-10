@@ -23,6 +23,24 @@ declare namespace Ajax {
      * 消息
      * @type { string }
      */
-    message?: string
+    message?: string;
+
+    /**
+     * msg
+     * @type { string }
+     */
+    msg?: string;
+
+    /**
+     * 数据
+     * @type { any }
+     */
+    data: any;
+
+    /**
+     * 页数
+     * @type { any }
+     */
+    page?: any;
   }
 }
