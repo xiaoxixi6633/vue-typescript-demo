@@ -1,21 +1,36 @@
 import {ActionTree} from 'vuex';
 import axios from 'axios';
 import TYPES from './types';
-import modules from '../mock/slides';
+//import modules from '../mock/slides';
 const actions: ActionTree<any, any> = {
   // ajax 初始化
   async initAjax({ dispatch }) {
     dispatch('getModules')
-    dispatch('getHeadline')
-    setTimeout(() => dispatch('getActivity'), 2000)
-    dispatch('getSuperSale')
-    dispatch('getShops')
+    //dispatch('getHeadline')
+    //setTimeout(() => dispatch('getActivity'), 2000)
+    //dispatch('getSuperSale')
+    //dispatch('getShops')
   },
   // 获取modules
   async getModules({ state, commit }) {
-    let _res = modules;
-    const res: Ajax.AjaxResponse = await axios.get('/modules').then((res) => res.data).catch((e: string) => console.error(e))
-    if (res && res.code == 200) commit(TYPES.SET_MODULES, res.result.list)
+    let _res = [
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+      {id:'北京',price:'100',time:'2018-10-23'},
+    ];
+    const res: Ajax.AjaxResponse = await axios.post('/mc-message/message/notice/list',{token: 'sdjfksdjflkdsf', currentPage:1},{headers:{'Content-Type':'application/json;charset=UTF-8'}}).then((res) => res.data).catch((e: string) => console.error(e))
+    if (res && res.code == 200) commit(TYPES.SET_MODULES, res.data)
+    console.log(res);
+    commit(TYPES.SET_MODULES, _res)
   },
   // 点评头条
   async getHeadline({ state, commit }) {
