@@ -1,10 +1,9 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue, { AsyncComponent } from 'vue';
+import Router, { RouteConfig, Route, NavigationGuard } from 'vue-router';
+//const home: AsyncComponent = (): any => import('@/views/main.vue');
 import home from '@/components/home/home.vue';
 import today from '@/components/today/index.vue';
 import thisMounth from '@/components/thisMounth/index.vue';
-
-
 import cityList from '@/components/cityList/index.vue';
 import cityListPrice from '@/components/cityListPrice/index.vue';
 import cityListTime from '@/components/cityListTime/index.vue';
