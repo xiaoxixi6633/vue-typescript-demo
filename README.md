@@ -1,4 +1,4 @@
-# AdminTs
+
 
 > 构建的基于 Vue TypeScript 开发环境。 支持多页面开发。有什么问题可以提交 Issues 或者 用其他方式联系我。
 
