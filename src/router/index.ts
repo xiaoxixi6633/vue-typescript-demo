@@ -11,7 +11,6 @@ import cityListTime from '@/components/cityListTime/index.vue';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history', 
   linkActiveClass:'active',
   routes: [
     {
